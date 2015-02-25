@@ -26,6 +26,7 @@ CGUIDialogPVRChannelGuide::CGUIDialogPVRChannelGuide()
     : CGUIDialog(WINDOW_DIALOG_PVR_CHANNEL_GUIDE, "DialogPVRChannelGuide.xml")
 {
   m_vecItems.reset(new CFileItemList);
+  m_loadType = LOAD_ON_GUI_INIT;
 }
 
 CGUIDialogPVRChannelGuide::~CGUIDialogPVRChannelGuide() = default;
